@@ -1,0 +1,22 @@
+[{
+	"x":173,
+	"y":596,
+	"width":75,
+	"height":26,
+	"class":"link",
+	"data" : 
+		{
+			"url": "http://www.apple.com/itunes"
+		}
+},
+{
+	"x":245,
+	"y":596,
+	"width":75,
+	"height":26,
+	"class":"link",
+	"data" : 
+		{
+			"url": "http://play.google.com"
+		}
+}]
