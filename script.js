@@ -6,36 +6,21 @@ const tipo_de_imagen = "jpg";
 
 const previewer = document.getElementById("previewer");
 const viewer = document.getElementById("viewer");
-// const viewerInfo = document.getElementById("viewport").getBoundingClientRect();
 const gallery_icon = document.getElementById("gallery");
 
 gallery_icon.addEventListener("click", () => {
     previewer.style.width = "8rem";
-    // previewer.style.padding = "0.6rem calc(0.6rem - var(--scroll-width)) 0.6rem 0.6rem";
+    gallery_icon.style.display = "none";
 });
-
-// ham.addEventListener("click", function() {
-//     console.log(previewer.style.maxWidth)
-//     if (previewer.style.maxWidth){
-//       previewer.style.maxWidth = null;
-//     } else {
-//       previewer.style.maxWidth = "30%";
-//     }
-// });
 
 ["touchstart", "click", "scroll"].forEach((event) => {
     viewer.addEventListener(event, () => {
         if (previewer.style.width == "8rem") {
             previewer.style.width = null;
-            previewer.style.padding = "0";
-
+            gallery_icon.style.display = "flex";
         }
     });
 });
-
-// previewer.addEventListener("click", () => {
-//     previewer.style.maxWidth = null;
-// })
 
 // const addImage = (id, src, container) => {
 //     let div = document.createElement("div");

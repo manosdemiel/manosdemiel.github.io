@@ -8,6 +8,8 @@
     --scroll-width: 0.25rem;
 }
 
+/* 7c848a */
+
 * {
     margin: 0;
     padding: 0;
@@ -70,15 +72,21 @@ body {
 
 
 .gallery {
+    display: flex;
+    align-items: center;
     cursor: pointer;
     position: fixed;
-    top: 0;
-    right: 0;
-    width: 5rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    height: 2.5rem;
+    background-color: #f9f9f9c7;
+    padding: 0.5rem;
+    backdrop-filter: blur(8px);
+    border-radius: 0.5rem;
 }
 
 .gallery img {
-    width: inherit;
+    height: 1.5rem;
 }
 
 
