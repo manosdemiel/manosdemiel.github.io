@@ -30,11 +30,23 @@ title.addEventListener("click", function() {
 });
 
 const addImage = (id, src, container) => {
+    let div = document.createElement("div");
+    div.classList.add("img-container");
+
+    let diva = document.createElement("div");
+    diva.classList.add("img-anchor");
+    diva.id = nombre_de_imagen + id;
+
+    div.appendChild(diva);
+
     let img = new Image();
     img.src = src;
     // img.style.maxHeight = viewerInfo.height + "px";
-    img.id = nombre_de_imagen + id;
-    container.appendChild(img);
+    // img.id = nombre_de_imagen + id;
+
+    div.appendChild(img);
+
+    container.appendChild(div);
 }
 
 const addPreviewImage = (id, src, container) => {

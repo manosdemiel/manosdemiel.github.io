@@ -22,6 +22,7 @@ body {
 .header {
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .header .title {
@@ -69,6 +70,18 @@ body {
 
 .viewer img {
     object-fit: contain;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.img-anchor {
+    height: var(--header-height);
+    position: absolute;
+    top: calc(var(--header-height) * -1);
 }
 
 
