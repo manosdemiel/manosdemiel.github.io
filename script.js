@@ -32,7 +32,7 @@ title.addEventListener("click", function() {
 const addImage = (id, src, container) => {
     let img = new Image();
     img.src = src;
-    img.style.maxHeight = viewerInfo.height + "px";
+    // img.style.maxHeight = viewerInfo.height + "px";
     img.id = nombre_de_imagen + id;
     container.appendChild(img);
 }
