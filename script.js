@@ -8,7 +8,7 @@ const tipo_de_imagen = "jpg";
 const previewer = document.getElementById("previewer");
 const viewer = document.getElementById("viewer");
 const title = document.getElementById("title");
-const viewerInfo = viewer.getBoundingClientRect();
+const viewerInfo = document.getElementById("viewport").getBoundingClientRect();
 
 title.innerText = titulo;
 
@@ -41,7 +41,7 @@ const addImage = (id, src, container) => {
 
     let img = new Image();
     img.src = src;
-    // img.style.maxHeight = viewerInfo.height + "px";
+    img.style.maxHeight = viewerInfo.height + "px";
     // img.id = nombre_de_imagen + id;
 
     div.appendChild(img);
