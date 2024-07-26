@@ -9,10 +9,11 @@ const previewer = document.getElementById("previewer");
 const viewer = document.getElementById("viewer");
 const title = document.getElementById("title");
 const viewerInfo = document.getElementById("viewport").getBoundingClientRect();
+const ham = document.getElementById("ham-icon");
 
 title.innerText = titulo;
 
-title.addEventListener("click", function() {
+ham.addEventListener("click", function() {
     console.log(previewer.style.maxWidth)
     if (previewer.style.maxWidth){
       previewer.style.maxWidth = null;
@@ -26,8 +27,12 @@ title.addEventListener("click", function() {
         if (previewer.style.maxWidth) {
             previewer.style.maxWidth = null;
         }
-    })
+    });
 });
+
+previewer.addEventListener("click", () => {
+    previewer.style.maxWidth = null;
+})
 
 const addImage = (id, src, container) => {
     let div = document.createElement("div");

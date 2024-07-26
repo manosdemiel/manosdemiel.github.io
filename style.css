@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Helvetica, Arial, sans-serif;
 }
 
 html {
@@ -22,12 +23,22 @@ body {
 .header {
     position: sticky;
     top: 0;
+    height: var(--header-height);
+    background-color: bisque;
     z-index: 1000;
+    display: flex;
+    align-items: center;
 }
 
 .header .title {
-    height: var(--header-height);
-    background-color: bisque;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+#ham-icon {
+    width: 32px;
+    margin-left: 20px;
 }
 
 .previewer {
@@ -35,6 +46,7 @@ body {
     background-color: rgb(240, 240, 240);
     max-width: 0;
     height: calc(100vh - var(--header-height));
+    top: var(--header-height);
     overflow: hidden;
     transition: max-width 0.2s ease-out;
     overflow-y: scroll;
@@ -86,7 +98,6 @@ body {
 
 #viewport {
     position: absolute;
-    width: 100vh;
     height: calc(100vh - var(--header-height));
 }
 
