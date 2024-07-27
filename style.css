@@ -71,6 +71,11 @@ body {
     border-radius: 0.45rem;
 }
 
+.prev-space {
+    min-height: 100px;
+    display: block;
+}
+
 .gallery {
     display: flex;
     align-items: center;

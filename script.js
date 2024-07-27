@@ -26,6 +26,8 @@ const closePreviewer = () => {
     viewer.addEventListener(event, closePreviewer);
 });
 
+previewer.addEventListener("click", closePreviewer);
+
 // const addImage = (id, src, container) => {
 //     let div = document.createElement("div");
 
