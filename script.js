@@ -1,5 +1,5 @@
 // ---------- Variables editables ----------
-const numero_de_paginas = 6;
+const numero_de_paginas = 12;
 const nombre_de_imagen = "imgp";
 const tipo_de_imagen = "jpg";
 // -----------------------------------------
