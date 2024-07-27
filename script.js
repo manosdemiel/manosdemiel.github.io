@@ -1,7 +1,7 @@
 // ---------- Variables editables ----------
-const numero_de_paginas = 12;
-const nombre_de_imagen = "imgp";
-const tipo_de_imagen = "jpg";
+const numero_de_paginas = 23;
+const nombre_de_imagen = "";
+const tipo_de_imagen = "png";
 // -----------------------------------------
 
 const previewer = document.getElementById("previewer");
@@ -71,7 +71,7 @@ const addPreviewImage = (id, src, container) => {
 }
 
 
-for (let i=0; i<numero_de_paginas; i++) {
+for (let i=1; i<=numero_de_paginas; i++) {
     let src = "./paginas/" + nombre_de_imagen + i + "." + tipo_de_imagen;
 
     addImage(i, src, viewer);
