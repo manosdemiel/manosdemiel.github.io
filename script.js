@@ -26,8 +26,6 @@ const closePreviewer = () => {
     viewer.addEventListener(event, closePreviewer);
 });
 
-document.addEventListener("scroll", closePreviewer);
-
 // const addImage = (id, src, container) => {
 //     let div = document.createElement("div");
 
